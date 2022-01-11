@@ -1,0 +1,307 @@
+:root {
+    --color-primary: #536dfeff;
+    --color-second: black;
+    --color-text-primary: #ffffff;
+    --color-text-second: black;
+    --background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    background-color: black;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+/* end settings */
+
+nav svg {
+    margin-top: 10px;
+    width: 50px;
+    height: 40px;
+    fill: white;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+main {
+    background-color: #e6e6e6ff;
+}
+
+
+/* welcome */
+
+.welcome {
+    height: calc( 100vh - 64px);
+    background-image: url("/app/img/home.svg"), url("/app/img/1.jpg");
+    background-position: bottom, center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, cover;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 4rem);
+}
+
+.welcome article {
+    grid-row: 2;
+    grid-column: 2/3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.welcome h1,
+.welcome h2 {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+
+/* endwelcome */
+
+#servicios .servicio-web,
+#preguntas,
+#contacto {
+    padding-top: 10rem;
+    text-align: center;
+}
+
+.seo-web {
+    padding-top: 5rem;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.servicio-web h2,
+.seo-web h2,
+#contacto h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 5rem;
+}
+
+.servicio-web p {
+    font-weight: 300;
+    margin-bottom: 3.5rem;
+    font-size: 23px;
+    margin: 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.servicio-web a {
+    font-size: 23px;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.servicio-web h3 {
+    margin: 2rem 0;
+}
+
+.dispositivos-compatibles {
+    height: 105px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.dispositivos-compatibles img,
+.dispositivos-compatibles p {
+    width: 33%;
+    font-size: 1rem;
+}
+
+.dispositivos-compatibles img {
+    border-radius: 1px black solid;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+#demo {
+    padding-top: 5rem;
+    /* background-color: red; */
+    text-align: center;
+}
+
+#demo div {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.demo img {
+    width: 100%;
+    /* height: 100px; */
+}
+
+.demo h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contacto {
+    height: 600px;
+    /* background-color: red; */
+    /* display: flex;
+    justify-content: baseline; */
+    background-image: url("/app/img/contact_.svg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
+
+#contacto img {
+    height: 32px;
+}
+
+#contacto section {
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0 40px;
+}
+
+#contacto section a,
+#contacto section p {
+    height: 100px;
+    width: 100px;
+    /* margin: 5px 50px; */
+    font-size: 1rem;
+}
+
+#contacto .contacto-img a:nth-child(1) {
+    background-image: url("/app/img/whatsapp.svg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100px;
+}
+
+#contacto .contacto-img a:nth-child(2) {
+    background-image: url("/app/img/telegram.svg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100px;
+}
+
+#contacto .contacto-img a:nth-child(3) {
+    background-image: url("/app/img/telefono.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius: 100px;
+    background-color: blue;
+}
+
+#contacto .contacto-img a:nth-child(4) {
+    background-image: url("/app/img/gmail.svg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.wave {
+    background-image: url("/app/img/waves.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 130px;
+}
+
+footer {
+    color: #e6e6e6ff;
+    margin: 10rem 0;
+    min-height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer a {
+    color: #e6e6e6ff;
+}
+
+
+/* .sidenav {
+    height: 100%;
+    width: 100%;
+} */
+
+
+/* 
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+*/
+
+@media (max-width: 480px) {}
+
+h1,
+h2 {
+    font-family: 'Rowdies', cursive;
+    font-weight: 400;
+}
