@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /doctor/
+Disallow: /juridico/
+Disallow: /restaurant/
+
+User-agent: *
+Allow: /
+
+Sitemap: http://fallckor.com/sitemap.xml
